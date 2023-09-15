@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-card {
+    max-height: 500px; /* Ajusta el valor según tus necesidades */
+}
+
+
+.whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición para el fondo */
+}
+
+.whatsapp-button img {
+    width: 30px; /* Tamaño del ícono de WhatsApp */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+
+}
+
+.whatsapp-button:hover img {
+    background-color: #128C7E; /* Cambia el color de fondo al mover el cursor */
+
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Cambia el color de fondo al mover el cursor */
+}

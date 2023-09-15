@@ -1,0 +1,84 @@
+/*CONTACTO*/
+/* Estilos para la sección de contacto */
+body {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.content-below-header {
+    margin-top: 100px; /* Ajusta la altura del encabezado */
+    /* Otros estilos según tus necesidades */
+}
+
+#contacto {
+    display: flex;
+    flex-direction: row; /* Diseño de fila en pantallas de ordenador */
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#Subheader {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: whitesmoke;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+}
+
+.contacto-container {
+    display: flex;
+    flex-direction: row; /* Diseño de fila en pantallas de ordenador */
+    align-items: flex-start;
+}
+
+.contacto-info {
+    flex: 1;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.google-map {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 300px;
+}
+
+.contacto-info a {
+    display: block;
+    margin-top: 10px;
+    background-color: #25d366;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contacto-info a:hover {
+    background-color: #128c7e;
+}
+
+/* Consulta de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    #contacto,
+    .contacto-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra en pantallas pequeñas */
+    }
+
+    .contacto-info {
+        margin-top: 20px; /* Ajusta el margen superior en pantallas pequeñas */
+        margin-left: 0; /* Reinicia el margen izquierdo en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .google-map {
+        margin-left: 0; /* Reinicia el margen izquierdo en pantallas pequeñas */
+        margin-right: 0; /* Reinicia el margen derecho en pantallas pequeñas */
+    }
+}
+
+

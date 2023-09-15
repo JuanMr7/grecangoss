@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.sticky-header {
+  position: fixed;
+  /* Fija el header en la parte superior */
+  top: 0;
+  /* Coloca el header en la parte superior de la ventana gráfica */
+  width: 100%;
+  /* Establece el ancho al 100% del viewport */
+  background-color: whitesmoke;
+  /* Cambia el fondo según tu diseño */
+  z-index: 1000;
+  /* Ajusta la propiedad z-index para asegurarte de que esté encima de otros elementos */
+  /* Otros estilos como altura, colores de texto, márgenes, etc. */
+}
+
+
+#check {
+  display: none;
+  /* Oculta el botón check */
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #a1c0c5;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  background: whitesmoke;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.enlace {
+  position: absolute;
+  padding: 1px 10px;
+}
+
+.logo {
+  height: 99px;
+  max-width: 100%;
+  /* Para garantizar que el logo se ajuste en pantallas pequeñas */
+  display: block;
+  /* Alinea el logo horizontalmente en pantallas pequeñas */
+  margin: 0 auto;
+  /* Centra el logo horizontalmente */
+}
+
+nav ul li a.current,
+nav ul li a:hover {
+  color: #eeb956;
+  transition: 0.5s;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+
+/* CSS para pantallas más pequeñas (max-width: 858px) */
+@media (max-width: 858px) {
+  .logo {
+    height: 80px; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Centra el logo horizontalmente */
+  }
+
+  .checkbtn {
+    display: block;
+    margin-right: 20px; /* Añade un pequeño margen a la derecha del icono de hamburguesa */
+    cursor: pointer;
+  }
+
+  /* Estilos para el menú desplegable */
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 268px;
+    background: rgba(184, 211, 238, 0.966); /* Cambia el color de fondo a transparente con opacidad */
+    top: 90px;
+    left: 100%;
+    text-align: end; /* Centra el texto del menú horizontalmente */
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px 0; /* Reduce el margen superior e inferior de los elementos del menú */
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+
+
+
+/* Estilos para el footer */
+footer {
+  background-color: whitesmoke;
+  padding: 20px;
+  color: black;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 5px whitesmoke;
+}
+
+/* Contenedor principal del footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+/* Estilos para el logotipo en el footer */
+.footer-logo img {
+  max-width: 100px;
+  margin-left: 20px;
+  /* Reducido el margen izquierdo para ordenador */
+}
+
+.footer-logo p {
+  margin-top: 20px;
+  margin-left: 20px;
+  /* Reducido el margen izquierdo para ordenador */
+}
+
+/* Información en el footer */
+/* Estilos para la información en el footer */
+.footer-info {
+  flex: 1;
+  margin: 10px;
+  margin-left: 200px;
+  /* Reducido el margen izquierdo para ordenador */
+  text-align: center;
+  /* Centra el texto en dispositivos más pequeños */
+}
+
+.footer-info p {
+  margin-bottom: 5px;
+}
+
+/* Redes sociales en el footer */
+.footer-social {
+  margin-right: 20px;
+  /* Reducido el margen derecho para ordenador */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centra horizontalmente las redes sociales en dispositivos más pequeños */
+  flex-wrap: wrap;
+  /* Permite que las redes sociales se envuelvan en pantallas pequeñas */
+  text-align: center;
+  /* Centra el texto en dispositivos más pequeños */
+}
+
+/* Estilos para los enlaces de redes sociales en el footer */
+.footer-social a {
+  margin: 5px;
+  color: black;
+}
+
+/* Estilos para los logotipos de redes sociales en el footer */
+.social-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.social-logo a:hover {
+  color: #F2CB80;
+  transition: 0.5s;
+}
+
+/* Consulta de medios para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .footer-logo img {
+    max-width: 80px;
+    /* Reduce el tamaño del logotipo en pantallas más pequeñas */
+  }
+
+  .footer-logo p {
+    margin-top: 10px;
+  }
+
+  .footer-info {
+    margin-left: 0;
+    /* Elimina el margen izquierdo en pantallas más pequeñas */
+    text-align: center;
+    /* Centra el texto en pantallas más pequeñas */
+  }
+
+  .footer-social {
+    margin-right: 0;
+    /* Elimina el margen derecho en pantallas más pequeñas */
+    justify-content: center;
+    /* Centra horizontalmente las redes sociales en pantallas más pequeñas */
+    text-align: center;
+    /* Centra el texto en pantallas más pequeñas */
+  }
+
+  .social-logo {
+    margin-right: 5px;
+  }
+}
